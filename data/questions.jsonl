@@ -1,0 +1,49 @@
+{"id": "q01", "question": "How can I avoid running one query per row when reading related objects in a loop?", "gold": ["topics/db/optimization.txt", "ref/models/querysets.txt"], "evidence": "select_related", "split": "dev"}
+{"id": "q02", "question": "What is the way to wrap several database operations so they either all succeed or all roll back?", "gold": ["topics/db/transactions.txt"], "evidence": "atomic", "split": "test"}
+{"id": "q03", "question": "How do I make a cross-site request forgery token appear in my forms?", "gold": ["howto/csrf.txt"], "evidence": "csrf_token", "split": "test"}
+{"id": "q04", "question": "What should I verify before putting a site into production?", "gold": ["howto/deployment/checklist.txt"], "evidence": "check --deploy", "split": "dev"}
+{"id": "q05", "question": "How do I cache the output of a single view for a number of minutes?", "gold": ["topics/cache.txt"], "evidence": "cache_page", "split": "test"}
+{"id": "q06", "question": "How do I change a model field and have the database schema follow?", "gold": ["topics/migrations.txt"], "evidence": "makemigrations", "split": "test"}
+{"id": "q07", "question": "How can I run code whenever a model instance is saved without touching the model's own save method?", "gold": ["topics/signals.txt", "ref/signals.txt"], "evidence": "receiver", "split": "dev"}
+{"id": "q08", "question": "Where is per-visitor data stored between requests and how do I switch the storage backend?", "gold": ["topics/http/sessions.txt"], "evidence": "SESSION_ENGINE", "split": "test"}
+{"id": "q09", "question": "How do I write a component that wraps every request and response?", "gold": ["topics/http/middleware.txt"], "evidence": "get_response", "split": "test"}
+{"id": "q10", "question": "How do I count related objects or compute a sum for each row of a queryset?", "gold": ["topics/db/aggregation.txt"], "evidence": "annotate", "split": "dev"}
+{"id": "q11", "question": "How do I refer to another column in a filter or update without pulling the value into Python?", "gold": ["ref/models/expressions.txt"], "evidence": "F()", "split": "test"}
+{"id": "q12", "question": "How can I test my views with a fake browser that doesn't need a running server?", "gold": ["topics/testing/tools.txt"], "evidence": "Client", "split": "test"}
+{"id": "q13", "question": "How do I restrict a view to logged-in users?", "gold": ["topics/auth/default.txt"], "evidence": "login_required", "split": "dev"}
+{"id": "q14", "question": "How do I replace the built-in user model with my own?", "gold": ["topics/auth/customizing.txt"], "evidence": "AUTH_USER_MODEL", "split": "test"}
+{"id": "q15", "question": "How do I show a one-time notification to the user after a form submission?", "gold": ["ref/contrib/messages.txt"], "evidence": "messages.success", "split": "test"}
+{"id": "q16", "question": "How do I split a long list of objects across several pages?", "gold": ["topics/pagination.txt"], "evidence": "Paginator", "split": "dev"}
+{"id": "q17", "question": "How do I let users upload a file and where does it end up?", "gold": ["topics/http/file-uploads.txt"], "evidence": "request.FILES", "split": "test"}
+{"id": "q18", "question": "How can I send an email with an attachment?", "gold": ["topics/email.txt"], "evidence": "attach", "split": "test"}
+{"id": "q19", "question": "How do I create my own command for manage.py?", "gold": ["howto/custom-management-commands.txt"], "evidence": "BaseCommand", "split": "dev"}
+{"id": "q20", "question": "How do I translate strings in templates and Python code?", "gold": ["topics/i18n/translation.txt"], "evidence": "gettext", "split": "test"}
+{"id": "q21", "question": "How do I serve stylesheets and scripts during development and gather them for deployment?", "gold": ["howto/static-files/index.txt"], "evidence": "collectstatic", "split": "test"}
+{"id": "q22", "question": "How do I use more than one database and route queries between them?", "gold": ["topics/db/multi-db.txt"], "evidence": "DATABASE_ROUTERS", "split": "dev"}
+{"id": "q23", "question": "How do I make the database enforce uniqueness across a combination of columns?", "gold": ["ref/models/constraints.txt"], "evidence": "UniqueConstraint", "split": "test"}
+{"id": "q24", "question": "How do I speed up lookups by adding an index to a model?", "gold": ["ref/models/indexes.txt"], "evidence": "Index", "split": "test"}
+{"id": "q25", "question": "How do I turn query results into JSON?", "gold": ["topics/serialization.txt"], "evidence": "serialize", "split": "dev"}
+{"id": "q26", "question": "How do I get emailed when my production site raises an exception?", "gold": ["howto/error-reporting.txt"], "evidence": "ADMINS", "split": "test"}
+{"id": "q27", "question": "How do I run asynchronous code inside a view?", "gold": ["topics/async.txt"], "evidence": "async def", "split": "test"}
+{"id": "q28", "question": "How do I configure log output and handlers?", "gold": ["topics/logging.txt"], "evidence": "LOGGING", "split": "dev"}
+{"id": "q29", "question": "Which generic view shows a list of objects and which one shows a single object?", "gold": ["ref/class-based-views/generic-display.txt"], "evidence": "ListView", "split": "test"}
+{"id": "q30", "question": "How do I protect pages from being embedded in a frame on another site?", "gold": ["topics/security.txt", "ref/clickjacking.txt"], "evidence": "X-Frame-Options", "split": "test"}
+{"id": "q31", "question": "How do I define a model with a foreign key and a many-to-many relation?", "gold": ["topics/db/models.txt"], "evidence": "ManyToManyField", "split": "dev"}
+{"id": "q32", "question": "How do I customize the admin list page with search and filters?", "gold": ["ref/contrib/admin/index.txt"], "evidence": "list_filter", "split": "test"}
+{"id": "q33", "question": "How do I validate a single form field with my own rule?", "gold": ["ref/forms/validation.txt"], "evidence": "clean_", "split": "test"}
+{"id": "q34", "question": "How do I cheaply check whether a queryset has any results?", "gold": ["ref/models/querysets.txt"], "evidence": "exists()", "split": "dev"}
+{"id": "q35", "question": "How do I do a case-insensitive text match in a filter?", "gold": ["ref/models/querysets.txt", "topics/db/queries.txt"], "evidence": "iexact", "split": "test"}
+{"id": "q36", "question": "How do I give a model field a value that is set when the row is created, such as a timestamp?", "gold": ["ref/models/fields.txt"], "evidence": "auto_now_add", "split": "test"}
+{"id": "q37", "question": "How do I execute raw SQL when the ORM can't express my query?", "gold": ["topics/db/sql.txt"], "evidence": "raw(", "split": "dev"}
+{"id": "q38", "question": "How do I tune how long database connections stay open?", "gold": ["ref/databases.txt"], "evidence": "CONN_MAX_AGE", "split": "test"}
+{"id": "q39", "question": "How do I run the test suite in parallel?", "gold": ["topics/testing/overview.txt"], "evidence": "--parallel", "split": "test"}
+{"id": "q40", "question": "How do I customize the page shown for missing URLs?", "gold": ["topics/http/views.txt"], "evidence": "handler404", "split": "dev"}
+{"id": "q41", "question": "How do I redirect a user to another URL from a view?", "gold": ["topics/http/shortcuts.txt"], "evidence": "redirect", "split": "test"}
+{"id": "q42", "question": "How do I name URL patterns and generate links to them?", "gold": ["topics/http/urls.txt"], "evidence": "reverse", "split": "test"}
+{"id": "q43", "question": "How do I read cookies or request headers inside a view?", "gold": ["ref/request-response.txt"], "evidence": "COOKIES", "split": "dev"}
+{"id": "q44", "question": "How do I send a large file back to the client as a response?", "gold": ["ref/request-response.txt"], "evidence": "FileResponse", "split": "test"}
+{"id": "q45", "question": "How do I store passwords safely and change the hashing algorithm?", "gold": ["topics/auth/passwords.txt"], "evidence": "PASSWORD_HASHERS", "split": "test"}
+{"id": "q46", "question": "How do I check whether a user is allowed to perform an action?", "gold": ["topics/auth/default.txt"], "evidence": "has_perm", "split": "dev"}
+{"id": "q47", "question": "How do I use a form tied to a model to create or edit a database row?", "gold": ["topics/forms/modelforms.txt"], "evidence": "ModelForm", "split": "test"}
+{"id": "q48", "question": "How do I add my own template tags or filters?", "gold": ["howto/custom-template-tags.txt"], "evidence": "simple_tag", "split": "test"}
+{"id": "q49", "question": "How do I display validation errors next to the fields they belong to?", "gold": ["topics/forms/index.txt"], "evidence": "errors", "split": "dev"}
